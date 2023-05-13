@@ -8,7 +8,7 @@ public class Stock {
      private ArrayList<Clothers> all_stock;
      public Stock(){
          all_stock = new ArrayList<Clothers>();
-         all_stock.add(new Shirt("fonfon", "good", "heaw", 45, "C:\\Users\\Ploy\\OneDrive\\เดสก์ท็อป\\pic_natnicha.jpg"));
+         all_stock.add(new Shirt("Popo", "good", "heaw", 45, "C:\\Users\\Ploy\\OneDrive\\เดสก์ท็อป\\pic_natnicha.jpg"));
          System.out.println(all_stock.get(0).getName());
      }
 
