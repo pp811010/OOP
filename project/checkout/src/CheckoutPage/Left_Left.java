@@ -1,5 +1,6 @@
 package CheckoutPage;
 
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -12,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Left_Left extends JPanel{
-    private JPanel p1, p2, p3;
+    private JPanel p1, p2, p3, p4;
     private JLabel name, color_size, price, number, pricesum, image;
     private JButton boxdelete, boxadd, delete;
 
@@ -22,6 +23,7 @@ public class Left_Left extends JPanel{
         p2 = new JPanel();
         p2.setLayout(new GridLayout(3,1));
         p3 = new JPanel();
+        p4 = new JPanel();
         name = new JLabel("Tiger");
         color_size = new JLabel("Red / M");
         price = new JLabel("฿390");
@@ -47,22 +49,15 @@ public class Left_Left extends JPanel{
         p3.add(number);
         p3.add(boxadd);
         p3.add(pricesum);
+        p4.add(delete);
 
         p1.add(image);
         p2.add(name);
         p2.add(p3);
-        p2.add(delete);
+        p2.add(p4);
 
         this.add(p1);
         this.add(p2);
-    }
-
-    public static void main(String[] args) {
-        JFrame fr = new JFrame();
-        fr.add(new Left_Left());
-        fr.pack();
-
-        fr.setVisible(true);
     }
 }
 
